@@ -3,6 +3,7 @@
 puts "Welcome to Tic Tac Toe"
 def display_board
   dash = "|"
+  line = "-----------"
   cells = Array.new
   cells[0] = "   "
   cells[1] = "   "
@@ -18,10 +19,10 @@ def display_board
 
 
   puts cells[0] + dash + cells[1] + dash + cells[2]
-  puts "-----------"
-  puts "   |   |   "
-  puts "-----------"
-  puts "   |   |   "
+  puts line
+  puts cells[3] + dash + cells[4] + dash + cells[5]
+  puts line
+  puts cells[6] + dash + cells[7] + dash + cells[8]
 end
 
 display_board
